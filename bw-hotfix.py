@@ -271,7 +271,7 @@ def build(filePath1):
 
 
 def githubCheck():
-    repo = git.Repo('bw-hotfix')
+    repo = git.Repo('')
     print(repo.head.commit.parents)
     previous_commit = repo.head.commit.parents[0]
     diff = previous_commit.diff()
